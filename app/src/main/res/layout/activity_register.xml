@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.awl.horeapps.RegisterActivity"
+
+    android:background="@drawable/back_login"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edUsername"
+        android:layout_alignStart="@+id/edEmail"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="@string/Nama"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edUsername"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/Uname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edConfPassword"
+        android:layout_alignStart="@+id/edUsername"
+        android:ems="10"
+        android:hint="@string/Pass"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/edConfPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bRegist"
+        android:layout_alignStart="@+id/edPassword"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="@string/ConfPass"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bRegist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/edConfPassword"
+        android:layout_marginBottom="66dp"
+        android:background="#556270"
+        android:text="@string/Regist" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#556270"
+        android:layout_alignBaseline="@+id/bRegist"
+        android:layout_alignBottom="@+id/bRegist"
+        android:layout_alignEnd="@+id/edConfPassword"
+        android:text="Cancel" />
+
+    <TextView
+        android:id="@+id/ket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bRegist"
+        android:layout_below="@+id/bLogin"
+        android:layout_marginTop="11dp"
+        android:text=" I Have an account? "
+        android:textColor="#ffffff"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/txlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ket"
+        android:layout_alignBottom="@+id/ket"
+        android:layout_toEndOf="@+id/ket"
+        android:text="Login "
+        android:textColor="#e53935"
+        android:textSize="11dp" />
+
+
+</RelativeLayout>
